@@ -84,13 +84,17 @@ public class PeopleViewer extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return Fragment_test.newInstance(position + 5);
+                    Fragment test = Fragment_test.newInstance(position);
+                    return test;
                 case 1:
-                    return Fragment_test.newInstance(position - 1);
-                case 2: //Return Fragment for groups
-                    return Fragment_test.newInstance(position + 1);
+                    Fragment test2 = Fragment_test.newInstance(position);
+                    return test2;
+                case 2:
+                    Fragment test3 = Fragment_test.newInstance(position);
+                    return test3;
                 default:
-                    return Fragment_test.newInstance(position + 1);
+                    Fragment test4 = Fragment_test.newInstance(position);
+                    return test4;
             }
         }
 
